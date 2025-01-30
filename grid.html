@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: beige;
+            border: 6px black solid;
+            padding: 30px;
+            display: grid;  /* display item one after another in horizontal way */
+
+            /* grid-template-columns: auto auto auto;  divide into 3 of same size */
+            /* grid-template-columns: auto auto 50%; 
+            last one = 50, first one = 25, second = 25 */
+            /* grid-template-rows: 100px 50px 70px; */
+
+            grid-template: 100px 120px 60px/20% 30% auto;
+            /* grid-template: row / column; */
+
+             /* grid-row-gap: 30px;
+            grid-column-gap: 50px; */
+            grid-gap: 30px 50px;
+            
+            
+
+
+        }
+        .item{
+            border: 2px solid black;
+            padding: 10px;
+            background-color: thistle;
+        }
+
+        #i3{
+            /* grid-row-start: 2; 
+            grid-row-end: span 2; */
+            grid-row: 2/span 2;
+
+           
+
+            /* grid-column-start: 4;
+            grid-column-end: span 2; */
+            
+            
+        }
+        #i7{
+            grid-column: 4/span 2;
+        }
+
+        #i9{
+            grid-area: 3/3/span 1/span 2;
+            /* grid-area: row start/column start/row-end/column-end */
+        }
+    </style>
+</head>
+<body>
+    <!-- display: grid; -->
+     <div class="container">
+        <div class="item">ITEM 1</div>
+        <div class="item">ITEM 2</div>
+        <div class="item" id="i3">ITEM 3</div>
+        <div class="item">ITEM 4</div>
+        <div class="item">ITEM 5</div>
+        <div class="item">ITEM 6</div>
+        <div class="item" id="i7">ITEM 7</div>
+        <div class="item">ITEM 8</div>
+        <div class="item" id="i9">ITEM 9</div>
+     </div>
+</body>
+</html>

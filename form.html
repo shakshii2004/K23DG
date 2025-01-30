@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <form action="" method="post">
+        <label for="uname">Enter name</label>
+        <input type="text" text="uname" id="uname" size="30"
+         maxlength="10" placeholder="Enter your name" required>
+        
+         <br><br>
+
+         <label for="pass">Enter password</label>
+         <input type="password" name="pass1" id="pass" placeholder="Password should be of 8 characters" required>
+
+        <br><br>
+
+        <label for="email">Enter Email</label>
+        <input type="email" name="Email" id="email" placeholder="emailname@domain" required>
+        <br><br>
+
+        <label for="review">Write a movie review:</label>
+        <textarea name="review" id="review" rows="9" cols="40">This is a good movie</textarea>
+        <br><br>
+
+        <!-- if we don't give value then it shows ON as value in backend -->
+
+        <!-- <label for="lang">Choose the language you know: </label>
+        <input type="checkbox" name="lang1" id="lang" value="Hin">Hindi
+        <input type="checkbox" name="lang1" id="lang" value="eng" checked>English
+        <input type="checkbox" name="lang1" id="lang" value="French">French
+        <input type="checkbox" name="lang1" id="lang" value="Italian">Italian -->
+        
+        <label for="lang">Choose the language you know: </label>
+        <input type="checkbox" name="lang1" id="lang" value="Hin">
+        <label for="lang">Hindi</label>
+        <input type="checkbox" name="lang1" id="lang1" value="eng" checked>
+        <label for="lang1">English</label>
+        <input type="checkbox" name="lang1" id="lang2" value="French">
+        <label for="lang2">French</label>
+        <input type="checkbox" name="lang1" id="lang3" value="Italian">
+        <label for="lang3">Spanish</label>
+        
+        <br><br>
+
+        <label for="radio button">Choose the highest qualification: </label>
+        
+        <input type="radio" name="radio1" id="btech">
+        <label for="btech">Btech</label>
+        
+        <input type="radio" name="radio1" id="mtech">
+        <label for="mtech">Mtech</label>
+       
+        <input type="radio" name="radio1" id="phd">
+        <label for="phd">Phd</label>
+        
+        <input type="radio" name="radio1" id="uni">
+        <label for="uni">university</label>
+        <br><br>
+
+        <label for="statesel">Choose your States: </label>
+        <!-- we use size here to show how much row should be visible
+          and multiple for choosing more than 1 state -->
+        <select name="statesel" id="statesel">
+        <option value="choosest">Choose State</option>
+
+        <option value="punj">Punjab</option>
+        <option value="del">Delhi</option>
+        <option value="hp">Himachal Pradesh</option>
+        <option value="ker">kerala</option>
+        <option value="tn">Tamil Nadu</option>
+    </select>
+
+        <br><br>
+        
+        <input type="submit" name="submit form" id="submit form" value="submit form">
+        <input type="reset" name="reset button" id="reset button" value="Reset">
+        <input type="image" name="imgbtn" id="imgbtn" src="image\OIP.jpeg" height="25" width="100">
+
+    </form>
+
+</body>
+</html>

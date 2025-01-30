@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* priority:  inline>internal>external */
+        /* we use * for universal and applied on whole body of html */
+        *{
+            background-color: azure;
+            font-size: medium;
+        }
+
+        h3:hover{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: antiquewhite;
+            font-weight: bold;
+            text-align: center;
+            color: rgb(11, 79, 15);
+            font-style: italic;
+        }
+
+        h1,h2{
+            background-color: burlywood;
+            color: rgb(37, 3, 69);
+        }
+
+        /* use # for id */
+        #p1{
+            color: green;
+        }
+
+        /* use . to access class */
+        .c1{
+            color: blueviolet;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        /* we use href here to control for which part onl we want css or Attribute Selector*/
+        a[href="form.html"]{
+            background-color: beige;
+            color: maroon;
+        }
+
+        .d1 p{
+            color: brown;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- Types of Css selector
+     1. Type selector
+     2. Attribute selector
+     3. Id selector
+     4. Class selector
+     5. Universal selector
+     6. Pseudo selector
+     7. Combinator selector -->
+
+    <h1>Front End Class- Int 219 Course Code</h1>
+    <h2>Learning CSS</h2>
+    <h3>Learning CSS3</h3>
+    <!-- class can be repeated and give same css to everyone where same class applied -->
+    <h4 class="c1">Learning CSS</h4>
+    <h5 class="c1">Learning CSS</h5>
+    <h6 class="c1">Learning CSS</h6>
+    <p id="p1">paragraph</p>  
+    <!-- id is uique & cannot be repeated and can be of same class too -->
+    <p>paragraph1</p>
+
+    <a href="form.html">HTML FORM</a>
+    <a href="table.html">HTML TABLE</a>
+
+    <div class="d1"><p>This is para in div</p></div>
+    <p>paragraph3</p>
+</body>
+</html>

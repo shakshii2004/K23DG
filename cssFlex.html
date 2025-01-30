@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: lightgrey;
+            padding: 30px;
+            border: 2px purple solid;
+            display: flex;
+            justify-content:flex-start;
+            align-items: flex-start;
+            height: 500px;
+            flex-direction: row;
+            flex-wrap: wrap;
+            row-gap: 20px;
+            column-gap: 20px;
+
+        }
+        .item{
+            background-color: rgb(143, 143, 137);
+            width: 70px;
+            height: 70px;
+            border: 2px rgb(16, 63, 109) solid;
+            color: brown;
+            font-family: 'Times New Roman', Times, serif;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0;
+            flex-flow: wrap-reverse;
+            /* flex-grow: 0; */
+            
+        }
+        #i1{
+            /* flex-grow: 5; 
+            align-self: center;
+            flex-shrink: 5; */
+            /* margin-right: auto; */
+        }
+        @media(max-width:500px){
+            .container{
+                flex-wrap: wrap;
+                background-color: gold;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="i1">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+        <div class="item">Item 7</div>
+        <div class="item">Item 8</div>
+        <div class="item">Item 9</div>
+
+    </div>
+</body>
+</html>
